@@ -426,8 +426,8 @@ testDTU <- function(object,
           empirical <- satuRn:::p.adjust_empirical(pval, 
                                                    t, 
                                                    main = colnames(contrasts)[i], 
-                                                   diagplot1 = TRUE, 
-                                                   diagplot2 = TRUE) 
+                                                   diagplot1 = diagplot1, 
+                                                   diagplot2 = diagplot2) 
           empirical_pval <- empirical$pval
           empirical_FDR <- empirical$FDR
           
